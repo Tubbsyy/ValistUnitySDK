@@ -1,20 +1,33 @@
 # ValistUnitySDK
 
-Submission for Valist's Unity SDK bounty on LearnWeb3
+This is a submission for a bounty on LearnWeb3
 
-To get started, import the .unitypackage into your Unity project and there are examples of how to utilize the functions from the SDK!
+## Getting Started
 
-First initialize an instance of the SDK in your variables with
+To get started, import the `.unitypackage` into your Unity project. You will notice that there is an example scene showing how to utilize the functions from the SDK!
 
-## ValistUnitySDK ValistSDK = new ValistUnitySDK();
-now you can call functions from the SDK into your script!
+First, initialize an instance of the SDK in your variables with:
 
-### Examples:
-For checking if a user owns your game's NFT license
-## bool verified = ValistSDK.checkLicense(accountName, projectName)
+```bash
+ValistUnitySDK ValistSDK = new ValistUnitySDK();
+```
 
-Purchasing a NFT license from your game with the native token, MATIC
-## bool purchase = await ValistSDK.purchaseProduct(accountName, projectName)
+After initializing, you can call functions from the SDK inside your script!
 
-Purchasing a NFT license from your game with an ERC20 token
-## bool purchaseToken = await ValistSDK.purchaseProductToken(accountName, projectName, preferredToken)
+### Examples: For checking if a user owns your game's NFT license
+
+```bash
+bool verified = ValistSDK.checkLicense(accountName, projectName)
+```
+
+## Purchasing an NFT license from your game with the native token, MATIC
+
+```bash
+bool purchase = await ValistSDK.purchaseProduct(accountName, projectName)
+```
+
+Purchasing an NFT license from your game with an ERC20 token
+
+```bash
+bool purchaseToken = await ValistSDK.purchaseProductToken(accountName, projectName, preferredToken)
+```
