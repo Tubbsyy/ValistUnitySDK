@@ -14,7 +14,9 @@ ValistUnitySDK ValistSDK = new ValistUnitySDK();
 
 After initializing, you can call functions from the SDK inside your script!
 
-### Examples: For checking if a user owns your game's NFT license
+# Examples: 
+
+## For checking if a user owns your game's NFT license
 
 ```bash
 bool verified = ValistSDK.checkLicense(accountName, projectName)
@@ -26,7 +28,7 @@ bool verified = ValistSDK.checkLicense(accountName, projectName)
 bool purchase = await ValistSDK.purchaseProduct(accountName, projectName)
 ```
 
-Purchasing an NFT license from your game with an ERC20 token
+## Purchasing an NFT license from your game with an ERC20 token
 
 ```bash
 bool purchaseToken = await ValistSDK.purchaseProductToken(accountName, projectName, preferredToken)
